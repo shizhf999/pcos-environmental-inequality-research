@@ -1,0 +1,45 @@
+# Centralized coverage settings per source
+# Use in your pipeline to avoid hard-coding year ranges and to mask gracefully
+
+analysis_window:
+  start_year: 1990
+  end_year: 2023
+
+sources:
+  gbd:
+    name: "Global Burden of Disease (IHME)"
+    coverage_start: 1990
+    coverage_end: 2023
+    notes: "Outcomes (PCOS prevalence, DALYs) available to 2023 per latest public release used."
+
+  who_gho:
+    name: "WHO Global Health Observatory"
+    coverage_start: 1990
+    coverage_end: 2023
+
+  wdi:
+    name: "World Bank World Development Indicators"
+    coverage_start: 1990
+    coverage_end: 2023
+
+  era5:
+    name: "ERA5 Reanalysis (ECMWF)"
+    coverage_start: 1990
+    coverage_end: 2023
+
+  un_pop:
+    name: "UN Population Division"
+    coverage_start: 1990
+    coverage_end: 2023
+
+  pm25_satellite:
+    name: "Satellite-derived PM2.5 (van Donkelaar et al., 2021)"
+    coverage_start: 1990
+    coverage_end: 2023
+    notes: "Harmonized to 2023 in this project’s processing; see processing scripts."
+
+  co2_per_capita:
+    name: "National CO2 per-capita from inventory reports"
+    coverage_start: 1990
+    coverage_end: 2023
+    notes: "Aligned to 2023 per latest national/international reports used."
