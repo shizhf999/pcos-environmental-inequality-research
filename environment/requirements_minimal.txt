@@ -1,0 +1,8 @@
+# Minimal requirements for config utilities and coverage loader
+# Place in repo at: environment/requirements_minimal.txt
+
+# Required for utils/config_loader.py
+pyyaml>=6.0
+
+# Optional: uncomment if you will use DataFrame helpers in utils/config_loader.py
+# pandas>=1.5
